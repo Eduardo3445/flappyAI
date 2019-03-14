@@ -23,6 +23,8 @@ Para executar o código, basta entrar na pasta com o código-fonte
 ```python
 cd flappyAI/src
 python flappy.py 
+
+Atenção: o código deve ser executado no python3, mas no momento não consegui. 
 ``` 
 
 **Créditos**
