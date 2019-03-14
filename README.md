@@ -1,4 +1,4 @@
-#flappyAI
+flappyAI
 ===================
 
 Código desenvolvido para a disciplina de Inteligência Artificial. 
@@ -11,14 +11,20 @@ Você provavelmente vai precisar instalar apenas o pygame.
 pip install pygame
 ``` 
 
+caso necessário instalar o pip, 
+
+```bash
+sudo apt-get install python-pip
+pip install --upgrade pip
+``` 
+
 Para executar o código, basta entrar na pasta com o código-fonte
 
 ```python
-flappyAI/src
+cd flappyAI/src
 python flappy.py 
 ``` 
 
 **Créditos**
 
 https://github.com/chncyhn/flappybird-qlearning-bot
-
