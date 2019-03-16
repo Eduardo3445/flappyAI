@@ -8,23 +8,27 @@ Código desenvolvido para a disciplina de Inteligência Artificial.
 Você provavelmente vai precisar instalar apenas o pygame. 
 
 ```bash
-pip install pygame
+pip3 install pygame
 ``` 
 
-caso necessário instalar o pip, 
-
-```bash
-sudo apt-get install python-pip
-pip install --upgrade pip
-``` 
 
 Para executar o código, basta entrar na pasta com o código-fonte
 
 ```python
 cd flappyAI/src
-python flappy.py 
+python3 flappy.py 
 ``` 
-Atenção: o código deve ser executado no python3, mas no momento não consegui.  
+Para remover a aprendizagem (zerar os valores de qvalues.json)
+
+```python
+python3 initialize_qvalues.py 
+``` 
+
+E, rodar o algoritmo de aprendizagem
+
+```python
+python3 learn.py (insira o número de iterações aqui) 
+``` 
 
 **Créditos**
 
