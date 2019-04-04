@@ -27,6 +27,7 @@ PIPE = [52, 320]
 PLAYER = [34, 24]
 BASE = [336, 112]
 BACKGROUND = [288, 512]
+SCORE = []
 
 def main():
     global HITMASKS, ITERATIONS, VERBOSE, bot
@@ -176,7 +177,11 @@ def mainGame(movementInfo):
 def showGameOverScreen(crashInfo):
     if VERBOSE:
         score = crashInfo['score']
-        print(str(bot.gameCNT - 1) + " | " + str(score))
+
+        if random.random() > 0.7:
+            with open('score.txt', 'a') as f:
+                f.write("%s\n" % score)
+            f.close()
 
     if bot.gameCNT == (ITERATIONS):
         bot.dump_qvalues(force=True)

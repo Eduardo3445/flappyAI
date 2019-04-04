@@ -15,3 +15,5 @@ for x in chain(list(range(-40,140,10)), list(range(140,421,70))):
 fd = open('qvalues.json', 'w')
 json.dump(qval, fd)
 fd.close()
+
+open('score.txt', 'w').close()  # clear score data
