@@ -24,10 +24,10 @@ Para remover a aprendizagem (zerar os valores de qvalues.json)
 python3 initialize_qvalues.py 
 ``` 
 
-E, rodar o algoritmo de aprendizagem
+E, rodar o algoritmo de aprendizagem (e escrever os scores) 
 
 ```python
-python3 learn.py (insira o número de iterações aqui) 
+python3 learn.py (insira o número de iterações aqui) --verbose
 ``` 
 
 **Créditos**
